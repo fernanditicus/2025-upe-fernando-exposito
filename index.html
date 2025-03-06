@@ -74,6 +74,8 @@
     <div class="buttons">
         <button onclick="showEntry(1)">Week 1</button>
         <button onclick="showEntry(2)">Week 2</button>
+        <button onclick="showEntry(3)">Week 3</button>
+        <button onclick="showEntry(4)">Week 4</button>
     </div>
     
     <div id="entry-1" class="entry">
@@ -86,7 +88,7 @@
     </div>
     
     <div id="entry-2" class="entry">
-        <p class="date">Week 2: 10-15 February, 2025</p>
+        <p class="date">Week 2: 10-14 February, 2025</p>
         <p>This week I finished the first version of the circuit, so I went into Gazebo to create a world that includes the track.</p>
         <p>I encountered a few small problems when I first entered the simulator, as it is a completely new environment to get used to. 
             For example, I couldn't import any custom objects, so I tried with a very simple custom cylinder before following the same process with the circuit.</p>
@@ -96,6 +98,28 @@
         <p>As I will do every week, here is a new image of my progress, in this case, a Gazebo world with the Monaco track.</p>
         <img src="assets/monacoGazebo.png" alt="Week 2 screenshot" class="screenshot">
     </div>
+
+    <div id="entry-3" class="entry">
+        <p class="date">Week 3: 17-21 February, 2025</p>
+        <p>This week, I was out for three days due to a fever, so I could only work for two days.</p>
+        <p>Now, I can reveal the circuit I have been working on: Spa, the Belgian track where F1 cars, pilots, and teams deliver one of the best races each year.</p>
+        <p>I also started learning about the system that robots use to work in Gazebo, which involves using plugins.</p>
+        <p>This week, I have not been very productive, but I am surely making progress in my work.</p>
+        <p>I left a Blender image of the circuit, which I managed to texture using the Google Maps satellite view.</p>
+        <img src="assets/spa.png" alt="Week 3 screenshot" class="screenshot">
+    </div>
+    
+    <div id="entry-4" class="entry">
+        <p class="date">Week 4: 24-28 February, 2025</p>
+        <p>This week, I experienced a setback as I could not open a Gazebo world using ROS 2.</p>
+        <p>I asked a colleague for help, so we started working together to solve the issues.</p>
+        <p>This led to the realization that I needed to change the computer's operating system. Until now, I have been working with the Windows Subsystem for Linux (WSL), 
+           but in the end, this caused trouble with some program installations. So, it is better to install a dual-boot system (so I do not have to erase the Windows system I normally use).</p>
+        <p>Hopefully, next week I will be able to start working on the new task I have been assigned: an Ackermann robot that follows the race line on the circuits.</p>
+        <p>Here you can see Gazebo Harmonic running on my brand-new Ubuntu operating system.</p>
+        <img src="assets/gzUbuntu.png" alt="Week 4 screenshot" class="screenshot">
+    </div>
+    
     
     <script>
         function showEntry(week) {
