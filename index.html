@@ -80,25 +80,32 @@
         <button onclick="showEntry(6)">Week 6</button>
         <button onclick="showEntry(7)">Week 7</button>
         <button onclick="showEntry(8)">Week 8</button>
+        <button onclick="showEntry(9)">Week 9</button>
+        <button onclick="showEntry(10)">Week 10</button>
+        <button onclick="showEntry(11)">Week 11</button>
+        <button onclick="showEntry(12)">Week 12</button>
+        <button onclick="showEntry(13)">Week 13</button>
+        <button onclick="showEntry(14)">Week 14</button>
     </div>
     
-    <div id="entry-1" class="entry">
+<div id="entry-1" class="entry">
         <p class="date">Week 1: 3-7 February, 2025</p>
-        <p>This week I started my guided practices in robotics. As a first task, I was told to recreate the Monaco circuit with realistic heights.
-           I started the job in Blender using the GIS addon, which provides realistic maps, so I had a good template to make the circuit line.</p>
-        <p>I also installed the robotics simulator Gazebo (Harmonic), which needed a Linux distribution to run. In this case, Ubuntu provides a Windows image that allows working with their system inside Windows.</p>
-        <p>Below is a top view capture of the plane that GIS can create with the circuit line I made.</p>
+        <p>This week, I started my guided practices in robotics. As a first task, I was told to recreate the Monaco circuit with realistic heights.
+             I started the job in Blender using the GIS add-on, which provides realistic maps, so I had a good template to make the circuit line.</p>
+        <p>I also installed the robotics simulator Gazebo (Harmonic), which needed a Linux distribution to run. In this case, Ubuntu provides a Windows
+             image that allows working with their system inside Windows.</p>
+        <p>Below is a top-view capture of the plane that GIS can create with the circuit line I made.</p>
         <img src="assets/capMonaco.png" alt="Week 1 screenshot" class="screenshot">
     </div>
     
     <div id="entry-2" class="entry">
         <p class="date">Week 2: 10-14 February, 2025</p>
-        <p>This week I finished the first version of the circuit, so I went into Gazebo to create a world that includes the track.</p>
+        <p>This week, I finished the first version of the circuit, so I went into Gazebo to create a world that includes the track.</p>
         <p>I encountered a few small problems when I first entered the simulator, as it is a completely new environment to get used to. 
             For example, I couldn't import any custom objects, so I tried with a very simple custom cylinder before following the same process with the circuit.</p>
         <p>This helped me learn about the worlds and formats that Gazebo uses to recreate reality.</p>
-        <p>I also started the process of including the circuit in the database, but so far, I haven't been able to do it safely. That will be my work for next week, along with
-           making a new circuit that you will be able to see in the next entry.</p>
+        <p>I also started the process of including the circuit in the database, but so far, I haven't been able to do it safely. 
+            That will be my work for next week, along with making a new circuit that you will be able to see in the next entry.</p>
         <p>As I will do every week, here is a new image of my progress, in this case, a Gazebo world with the Monaco track.</p>
         <img src="assets/monacoGazebo.png" alt="Week 2 screenshot" class="screenshot">
     </div>
@@ -109,7 +116,7 @@
         <p>Now, I can reveal the circuit I have been working on: Spa, the Belgian track where F1 cars, pilots, and teams deliver one of the best races each year.</p>
         <p>I also started learning about the system that robots use to work in Gazebo, which involves using plugins.</p>
         <p>This week, I have not been very productive, but I am surely making progress in my work.</p>
-        <p>I left a Blender image of the circuit, which I managed to texture using the Google Maps satellite view.</p>
+        <p>I've included a Blender image of the circuit, which I managed to texture using Google Maps satellite view.</p>
         <img src="assets/spa.png" alt="Week 3 screenshot" class="screenshot">
     </div>
     
@@ -117,8 +124,9 @@
         <p class="date">Week 4: 24-28 February, 2025</p>
         <p>This week, I experienced a setback as I could not open a Gazebo world using ROS 2.</p>
         <p>I asked a colleague for help, so we started working together to solve the issues.</p>
-        <p>This led to the realization that I needed to change the computer's operating system. Until now, I have been working with the Windows Subsystem for Linux (WSL), 
-           but in the end, this caused trouble with some program installations. So, it is better to install a dual-boot system (so I do not have to erase the Windows system I normally use).</p>
+        <p>This led to the realization that I needed to change the computer's operating system. Until now, 
+            I have been working with the Windows Subsystem for Linux (WSL), but in the end, this caused trouble with some program installations.
+             So, it is better to install a dual-boot system (to avoid erasing the Windows system I normally use).</p>
         <p>Hopefully, next week I will be able to start working on the new task I have been assigned: an Ackermann robot that follows the race line on the circuits.</p>
         <p>Here you can see Gazebo Harmonic running on my brand-new Ubuntu operating system.</p>
         <img src="assets/gzUbuntu.png" alt="Week 4 screenshot" class="screenshot">
@@ -126,49 +134,179 @@
 
     <div id="entry-5" class="entry">
         <p class="date">Week 4: 3-7 March, 2025</p>
-        <p>This week, I continued working on gazebo and ROS2 trying to get gazebo open with ROS2.</p>
-        <p>As I changed my OS to Ubuntu, programs now are running on their native system instead of 
-            running on the Windows Linux Subsystem, wich caused some problems.</p>
-        <p>Now I am currently opening gazebo with ROS2 with no problem. This will allow me to see more details of the simulation once I open a world with a robot.</p>
-        <p>As an ackermann F1 robot is quite hard to make, I was recommended to take a simpler robot from the roboticsInfrastucture repository. In this case, I took the turtlebot robot
-            wich is made out of a quad body and two wheels.</p>
-        <p>I let you see turtlebot inside an empty world.</p>
+        <p>This week, I continued working on Gazebo and ROS2, trying to get Gazebo to open with ROS2.</p>
+        <p>As I changed my OS to Ubuntu, programs are now running on their native system instead of running on the Windows Linux Subsystem, which caused some problems.</p>
+        <p>Now I am currently opening Gazebo with ROS2 with no problem. This will allow me to see more details of the simulation once I open a world with a robot.</p>
+        <p>As an Ackermann F1 robot is quite hard to make, I was recommended to take a simpler robot from the roboticsInfrastructure repository.
+             In this case, I took the Turtlebot robot, which is made out of a quad body and two wheels.</p>
+        <p>I've included an image of the Turtlebot inside an empty world.</p>
         <img src="assets/gzUbuntu.png" alt="Week 4 screenshot" class="screenshot">
     </div>
 
     <div id="entry-6" class="entry">
         <p class="date">Week 6: 10-14 March, 2025</p>
-        <p>This week I changed a bit the approach to the problem of the ackermann robot.</p>
-        <p>As progress was too slow, I talked to Pedro, an experienced person inside the robotics structure we are working on.</p>
-        <p>He explained to me that it was not necesary use ROS2 to implement the ackermann car. In fact, it is easier to evade ROS2 until the robot is complete. </p>
-        <p>Pedro also gave me some references to strength my knwoledge basis, wich led me to explore the structure of .sdf files much more than I have done before,
-             the plugins system of gazebo and some repositories with ackermann models.</p>
-        <p>Previously I showed Spa in blender, but here you can see it inside gazebo.</p>
+        <p>This week, I slightly changed the approach to the Ackermann robot problem.</p>
+        <p>As progress was too slow, I talked to Pedro, an experienced person within the robotics structure we are working on.</p>
+        <p>He explained to me that it was not necessary to use ROS2 to implement the Ackermann car. In fact, it is easier to avoid ROS2 until the robot is complete.</p>
+        <p>Pedro also gave me some references to strengthen my knowledge base, which led me to explore the structure of .sdf files
+             much more than I had done before, the plugin system of Gazebo, and some repositories with Ackermann models.</p>
+        <p>Previously, I showed Spa in Blender, but here you can see it inside Gazebo.</p>
         <img src="assets/gzUbuntu.png" alt="Week 4 screenshot" class="screenshot">
     </div>
 
     <div id="entry-7" class="entry">
         <p class="date">Week 7: 16-20 June, 2025</p>
-        <p>Yes, you´re not wrong. The date is correct.</p>
-        <p>Last day of the previous week I have posted, I got injured in my arm while playing football with my friends.</p>
-        <p>I have passed several weeks of rest and some others of rehabilitation. </p>
-        <p>This week I had to get back into labour by remembering all I have done before, wich may not seem too much, but the processes I made before were hard to do, so there
-            are some steps I missed when trying to recreate things I did before.</p>
+        <p>Yes, you're not wrong. The date is correct.</p>
+        <p>On the last day of the previous week I posted, I got injured in my arm while playing football with my friends.</p>
+        <p>I have spent several weeks resting and some others in rehabilitation.</p>
+        <p>This week, I had to get back to work by remembering all I had done before, which may not seem like much, but the processes 
+            I made before were hard to do, so there were some steps I missed when trying to recreate things I did before.</p>
         <p>I also had to reintroduce myself to Ubuntu, but that was easy as Ubuntu is a very user-friendly OS.</p>
         <img src="assets/gzUbuntu.png" alt="Week 4 screenshot" class="screenshot">
     </div>
 
     <div id="entry-8" class="entry">
         <p class="date">Week 8: 23-27 June, 2025</p>
-        <p>This week I started working with an ackermann model a colleague did while I was injuried.</p>
-        <p>I have been constantly trying to make a robot spawn in an open world but for now it has been impossible.</p>
-        <p>It does not matter if I use ROS2 to launch the world, or if I use gazebo directly, the car does not spawn. </p>
-        <p>I have been told to make an exportable obejct of the circuit. By doing this, the visualizer of roboticsAcademy web can show a preview of the map.
-            This seems easy, as the visualizer works with .glb, that can be exported from blender, but the reality is that you need to make a double export, first to .dae
-            and then to .glb, so I made de docs for keep that registered in the github repository.</p>
+        <p>This week, I started working with an Ackermann model a colleague created while I was injured.</p>
+        <p>I have been constantly trying to make a robot spawn in an open world, but for now, it has been impossible.</p>
+        <p>It doesn't matter if I use ROS2 to launch the world or if I use Gazebo directly; the car does not spawn.</p>
+        <p>I have been told to make an exportable object of the circuit. By doing this, the visualizer of the roboticsAcademy web can show a preview of the map. 
+            This seems easy, as the visualizer works with .glb files, which can be exported from Blender. However, the reality is that you need 
+            to make a double export: first to .dae and then to .glb. So, I made the documentation to keep that registered in the GitHub repository.</p>
+        <img src="assets/gzUbuntu.png" alt="Week 4 screenshot" class="screenshot">
+    </div>
+
+    <div id="entry-9" class="entry">
+        <p class="date">Week 9: 30-4 July, 2025</p>
+        <p>This week, I was able to spawn the car in both the Monaco and Spa circuits.</p>
+        <p>Even if this seems like good news, the car was having some trouble trying to avoid its wheels from going into the asphalt in Monaco.</p>
+        <p>As I didn't know what was happening, I moved to Spa because the approach to the build solution is different, and the car might not introduce its wheels there.
+             And as I suspected, in Spa, the car doesn't go through the road, so I could test the car a few times there.</p>
+        <p>After that, I tried to separate the car spawn code from the Spa launcher to an independent file. That didn't work, and for reasons I still don't know,
+             I couldn't go back and spawn the car again in the correct pose. It appears initialized at zeros.</p>
+        <p>Last but not least this week, I talked to Nikhil, the creator of the car, to ask him why the car didn't show the textures, and he told me that in that particular car,
+             the textures were not migrated to Harmonic, but he was working on another car with textures.</p>
+        <img src="assets/gzUbuntu.png" alt="Week 4 screenshot" class="screenshot">
+    </div>
+
+    <div id="entry-10" class="entry">
+        <p class="date">Week 10: 7-11 July, 2025</p>
+        <p>This week, I primarily worked on car integration.</p>
+        <p>Before going into that, I made some documentation of the world creation process in Blender, so other collaborators can make complex and realistic custom worlds.</p>
+        <p>Now, talking about the car, I didn't make good progress. The car still goes through the asphalt in Monaco and cannot spawn in the correct pose in Spa.</p>
+        <p>All these weeks, I have been experiencing bugs and malfunctions with Gazebo in Ubuntu. Each time I try something new, I have to reboot the computer to make the changes visible. 
+            Normally it is only necessary to recompile the project, but this doesn't work in my case, so I will try to fix this for the future because it is causing me significant loss of time.</p>
+        <img src="assets/gzUbuntu.png" alt="Week 4 screenshot" class="screenshot">
+    </div>
+
+    <div id="entry-11" class="entry">
+        <p class="date">Week 11: 14-18 July, 2025</p>
+        <p>This week, I have been heavily stuck.</p>
+        <p> As I did last week, I worked on spawning and despawning the car in Gazebo using ROS2.</p>
+        <p>
+            Right now, the car spawns without problems in the world. It bridges between Gazebo and ROS2, and executes the logic I put into it via console. Up to this point there are no problems
+            at all, but when it's time to despawn, the car and the car's topics don't disappear, even if the console command's return is correct.
+        </p>
+        <p>
+            I spoke with some colleagues, and we reached the conclusion that this situation is exceptional and is a bug, so I moved to the next step, which is trying to make the car follow the line.
+            I didn't have time to start, so I hope to make some progress on this next week.
+        </p>
+        <p>
+            To include a photo here, I am showing the buildings I added to Monaco so it looks a bit better.
+        </p>
         <img src="assets/gzUbuntu.png" alt="Week 4 screenshot" class="screenshot">
     </div>
     
+    <div id="entry-12" class="entry">
+        <p class="date">Week 12: 21-25 July, 2025</p>
+        <p>This week, I went back to working on the car.</p>
+        <p> Fortunately, this time I understood the car far better than last time.</p>
+        <p>
+            It turns out that the code to make the car despawn needs a confirmation that it is actually a model that needs to be despawned. I was writing all
+            the parameters the car has, including that it is a model, but at the end of the command, I had to add a redundancy.
+        </p>
+        <p>
+            Then I continued by focusing on the 'follow line' exercise I have to migrate from Gazebo classic to Harmonic. The next step is to create a ROS2 launch
+            file that will automatically bridge into the car, but I only started it so I can't show it this week.
+        </p>
+        <p>
+            Since almost all the work this week is code-based, there won't be a photo this week.
+        </p>
+        <img src="assets/gzUbuntu.png" alt="Week 4 screenshot" class="screenshot">
+    </div>
+    
+    <div id="entry-13" class="entry">
+        <p class="date">Week 13: 28-31 July, 2025</p>
+        <p>This week, I tried to make the launch file bridge the car directly.</p>
+        <p> It is harder than it seems and the worst part is that I don't know the reason why it is not working.</p>
+        <p>
+            Right now, the topics seem to be working, but the bridge doesn't start, so it is impossible to give the car instructions either
+             by console or by script.
+        </p>
+        <p>
+            Since I am starting to get stuck again, I asked for some other work to do while trying to unlock the key to this exercise, so I was told to start 
+            looking into the autoparking exercise, in which a car has to look for a place to stop and park there.
+        </p>
+        <img src="assets/gzUbuntu.png" alt="Week 4 screenshot" class="screenshot">
+    </div>
+    
+    <div id="entry-14" class="entry">
+        <p class="date">Week 14: 1-5 September, 2025</p>
+        <p>This week, I read and understood the autopark exercise.</p>
+        <p> From last week (and a month apart) I inherited the malfunction problem of the car's bridge.</p>
+        <p>
+            As this was the first week of coming back to work after the summer break, I had to readapt and started remembering how everything worked.
+            To solve the bridge problem, I asked Javier, my colleague, for help, and he told me my ROS2 version was not ideal to work with harmonic. 
+            He told me to change it or to use BT-Studio, a test site that includes the correct version by default.
+            I obviously started the installation when Ubuntu collapsed due to a lack of space. Sadly, the only option to solve that is a new Ubuntu installation
+            with more space, so I did it, saving all the work done before the reinstallation.
+        </p>
+        <p>
+            At least I could get into BT-Studio, so I don't have to worry anymore about program versions.
+        </p>
+        <img src="assets/gzUbuntu.png" alt="Week 4 screenshot" class="screenshot">
+    </div>
+
+    <div id="entry-15" class="entry">
+        <p class="date">Week 15: 8-12 September, 2025</p>
+        <p>
+            This week, I worked closely with my colleague Javier to try to solve an unexpected problem I encountered while using BT Studio.
+        </p>
+        <p>
+            The issue was that BT Studio simply refused to synchronize the GitHub pool with Visual Studio Code, preventing me from keeping my local work 
+            aligned with the remote repository. We went through different possible solutions, from revising credentials and permissions to reinstalling 
+            extensions and checking the workspace configuration.
+        </p>
+        <p>
+            After many hours of trial, error, and adjustments, all our efforts unfortunately proved to be in vain. The platform continued to block the 
+            synchronization process, and the problem remained unresolved.
+        </p>
+        <p>
+            I decided not to waste any more time and to redirect my focus toward the Autoparking exercise, an activity that I had 
+            been planning to address later. This exercise involves creating three different parking scenarios (angled parking, parallel parking, and perpendicular parking) 
+            to test autonomous vehicle behavior. For this, I began by carefully reviewing how the entire system was originally implemented in Gazebo Classic, taking notes 
+            and analyzing its structure so I can prepare an effective migration to Gazebo Harmonic.
+        </p>
+        <img src="assets/gzUbuntu.png" alt="Week 15 screenshot" class="screenshot">
+    </div>
+
+
+    <div id="entry-16" class="entry">
+        <p class="date">Week 15: 15-19 September, 2025</p>
+        <p>This week, I created new maps for a migration of Autoparking exercise.</p>
+        <p>The Autoparking exercise has three different modes: angled parking, parallel parking, and perpendicular parking.</p>
+        <p>
+            Since I currently cannot test with the available development tools, I will start working directly on the database, using RoboticsAcademy as my 
+            primary test site.
+            To do that I cloned the repo and followed the user guide instalation of RA.
+        </p>
+        <p>
+            I actually had no time to test if that worked out to change the excercises, but next week I will see.
+        </p>
+        <img src="assets/gzUbuntu.png" alt="Week 15 screenshot" class="screenshot">
+    </div>
+
+
     <script>
         function showEntry(week) {
             let entries = document.querySelectorAll('.entry');
